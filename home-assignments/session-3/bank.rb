@@ -1,4 +1,5 @@
 # print_action method expects two parameters "action" and "amount"
+# 7. Answer: Eyal used “print_action” method to serve "code that human can read" & "keep it simple" principles.
 def print_action(action, amount)
   puts "You've asked to #{action} an amount of #{amount}$. Performing your request..."
 end

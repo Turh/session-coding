@@ -13,15 +13,17 @@ action = gets.chomp
 
 amount = 20
 
-print_action(action, amount)
-
 if action == "withdraw"
   balance -= amount
+  print_action(action, amount)
+  puts "Hi #{name}, Your current balance was changed and is now: #{balance}$"
 elsif action == "deposit"
   balance += amount
+  print_action(action, amount)
+  puts "Hi #{name}, Your current balance was changed and is now: #{balance}$"
+elsif action == "view"
+  puts "Hi #{name}, Your current current credit is: #{amount}$"
 end
-
-puts "Hi #{name}, Your current balance was changed and is now: #{balance}$"  
 
 
 # Bank home assignment

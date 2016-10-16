@@ -13,6 +13,10 @@ name = gets.chomp.capitalize!
 print "What action would you like to perform?  "
 action = gets.chomp
 
+if ! (action == "withdraw" || action == "deposit" || action == "view" )
+	        raise "Bad action!"
+end
+
 print "Please enter how much money you want to credit?  "
 amount = gets.chomp
 amount = amount.to_i

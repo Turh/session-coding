@@ -11,7 +11,9 @@ name = gets.chomp.capitalize!
 print "What action would you like to perform?  "
 action = gets.chomp
 
-amount = 20
+print "Please enter how much money you want to credit?  "
+amount = gets.chomp
+amount = amount.to_i
 
 if action == "withdraw"
   balance -= amount

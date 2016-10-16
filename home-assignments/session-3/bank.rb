@@ -3,7 +3,7 @@ def print_action(action, amount)
   puts "You've asked to #{action} an amount of #{amount}$. Performing your request..."
 end
 
-balance = 1000
+balance = rand(100..1000)
 
 print "Please enter your personal name:  "
 name = gets.chomp.capitalize!

@@ -13,13 +13,13 @@ action = gets.chomp
 
 amount = 20
 
-print_action(amount)
+print_action(action, amount)
 
 if action == "withdraw"
   balance -= amount
 elsif action == "deposit"
   balance += amount
-
+end
 
 puts "Hi #{name}, Your current balance was changed and is now: #{balance}$"  
 
@@ -34,7 +34,7 @@ puts "Hi #{name}, Your current balance was changed and is now: #{balance}$"
 # There are some things you need to do with this code:
 
 #   1. Run it! If it’s working, great! If it’s not, well, find out what is missing/wrong and fix it so it will run. (Continue to next missions only after the code is running)
-#   2. As you can see the two available actions are “withdraw” & “deposit”. However, what if I’m only interested in viewing my account credit? Please add a third option called “view” that only prints out to the screen the current credit (the “balance” variable).
+#   2. As you can see the two available actions are “withdraw” & “deposit”. However, what if I’m only interested in viewing my account credit? Please add a third option called “view” that only prints out to the screen the current credit (the “amount” variable).
 #   3. You can also notice that the actual “amount” variable is always set to a fixed number 20 (line 14). Let’s change it to a user input (like “action” and “name” variables do).
 #   4. The “balance” variable (line 6) is also hard coded to 100. Find a way to always set it to a random number between 100 and 1000 when the program starts (Hint: Ruby already knows how to do this you don’t need to implement such a functionality).
 #   5. Okay. now pay attention to the "balance" variable. There is no way to know what was the initial balance before the change. Please also print what was the previous balance in every place that you change it ("withdraw" and "deposit")
